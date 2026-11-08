@@ -53,6 +53,7 @@ dataset:
     hue: 0.1          # desplazamiento de tono en [-h, h] (fraccion del circulo)
     noise_std: 0.0    # ruido gaussiano opcional (ablacion color + ruido)
     prob: 1.0
+    bgr: true         # el zarr se creo con cv2.imread (orden BGR)
 val_dataloader:
   batch_size: 128
   num_workers: 8
